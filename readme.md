@@ -55,7 +55,7 @@ retail-price-prediction/
 ├── summary.txt                        # Written insight summary
 │
 ├── data/
-│   ├── Retail_Prices_of_Products.csv  # Raw dataset (not uploaded)
+│   ├── Retail_Prices_of_Products.csv  # Raw dataset 
 │   └── Data_Dictionary.txt            # Column definitions
 │
 ├── plots/
