@@ -1,0 +1,42 @@
+📘 Project Summary – Retail Price Prediction (Canada 2017–2025)
+------------------------------------------------------------
+
+🔍 Objective:
+Estimate pre-tax retail prices of Canadian products using historical data and machine learning models.
+
+📊 Dataset:
+- Source: Kaggle (Product Retail Price Survey by Aradhana Hirapara)
+- Records: Prices, taxes, product types across provinces from 2017 to 2025
+- License: CC0 (Public Domain)
+
+📈 Key Insights from EDA:
+1. 'Infant & Baby Products' and 'Meat & Poultry' showed the highest price variability and outliers.
+2. Provinces 2 to 6 had the highest average tax rates (~15%), while Province 10 had the lowest (~5%).
+3. Average product prices increased steadily year by year, indicating retail price inflation.
+4. Infant formula and premium beef cuts consistently ranked as the most expensive items.
+
+🤖 Machine Learning:
+- Models Used: Linear Regression and Random Forest Regression (sklearn)
+- Target: VALUE (pre-tax price)
+- Features: Year, Month, GEO, Product Category, Products, Taxable, Essential, Total tax rate
+
+📊 Model Evaluation:
+- Linear Regression: RMSE = 1.24, R² = 0.94
+- Random Forest: RMSE = 1.36, R² = 0.93
+
+🧠 Interpretation:
+- Linear Regression slightly outperformed Random Forest in this dataset.
+- Random Forest offers resilience to outliers and non-linear interactions.
+- Both models demonstrated strong predictive accuracy.
+
+📁 Visuals (saved in /plots):
+- PriceDistributionByCategory.png
+- TaxRateByProvince.png
+- AveragePriceOverTime.png
+- TopMostExpensiveItems.png
+- PredictedVSActual.png
+
+📌 Use Case:
+This project serves as a professional portfolio piece for data analyst roles, especially in retail and pricing analytics. It also demonstrates end-to-end skills from data cleaning to predictive modeling.
+
+👤 Created by: Arun Acharya
