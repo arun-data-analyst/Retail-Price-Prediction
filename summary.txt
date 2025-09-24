@@ -1,42 +1,31 @@
-📘 Project Summary – Retail Price Prediction (Canada 2017–2025)
+📘 Project Summary: Retail Price Prediction (Canada 2017–2025)
 ------------------------------------------------------------
 
-🔍 Objective:
-Estimate pre-tax retail prices of Canadian products using historical data and machine learning models.
+🔍 **Objective:**
+To build and evaluate machine learning models for estimating the pre-tax retail prices of Canadian products using historical data.
 
-📊 Dataset:
-- Source: Kaggle (Product Retail Price Survey by Aradhana Hirapara)
-- Records: Prices, taxes, product types across provinces from 2017 to 2025
+📊 **Dataset:**
+- Kaggle: Product Retail Price Survey (2017–2025)
+- Content: Prices, taxes, and product details across Canadian provinces.
 - License: CC0 (Public Domain)
 
-📈 Key Insights from EDA:
-1. 'Infant & Baby Products' and 'Meat & Poultry' showed the highest price variability and outliers.
-2. Provinces 2 to 6 had the highest average tax rates (~15%), while Province 10 had the lowest (~5%).
-3. Average product prices increased steadily year by year, indicating retail price inflation.
-4. Infant formula and premium beef cuts consistently ranked as the most expensive items.
+📈 **Key Findings from Analysis:**
+- [cite_start]**Price Inflation:** Average product prices show a consistent upward trend from 2017 to 2025[cite: 4].
+- [cite_start]**High Variability:** 'Infant & Baby Products' and 'Meat & Poultry' have the widest range of prices[cite: 1].
+- [cite_start]**Tax Differences:** Provinces 2 through 6 have the highest average tax rates (~15%), while Province 10 has the lowest (~5%)[cite: 3].
+- [cite_start]**Top-Priced Items:** Premium beef and infant formula are consistently the most expensive products[cite: 5].
 
-🤖 Machine Learning:
-- Models Used: Linear Regression and Random Forest Regression (sklearn)
-- Target: VALUE (pre-tax price)
-- Features: Year, Month, GEO, Product Category, Products, Taxable, Essential, Total tax rate
+🤖 **Modeling Results:**
+- [cite_start]**Models:** Linear Regression, Random Forest Regression [cite: 6]
+- [cite_start]**Target Variable:** VALUE (pre-tax price) [cite: 6]
 
-📊 Model Evaluation:
-- Linear Regression: RMSE = 1.24, R² = 0.94
-- Random Forest: RMSE = 1.36, R² = 0.93
+- **Linear Regression (Best Performing):**
+  - RMSE: 1.24
+  - R² Score: 0.94
 
-🧠 Interpretation:
-- Linear Regression slightly outperformed Random Forest in this dataset.
-- Random Forest offers resilience to outliers and non-linear interactions.
-- Both models demonstrated strong predictive accuracy.
+- **Random Forest Regression:**
+  - RMSE: 1.36
+  - R² Score: 0.93
 
-📁 Visuals (saved in /plots):
-- PriceDistributionByCategory.png
-- TaxRateByProvince.png
-- AveragePriceOverTime.png
-- TopMostExpensiveItems.png
-- PredictedVSActual.png
-
-📌 Use Case:
-This project serves as a professional portfolio piece for data analyst roles, especially in retail and pricing analytics. It also demonstrates end-to-end skills from data cleaning to predictive modeling.
-
-👤 Created by: Arun Acharya
+🧠 **Conclusion:**
+Both models performed exceptionally well, but the **Linear Regression** model was slightly more accurate for this specific dataset. [cite_start]The project successfully demonstrates an end-to-end workflow for solving a real-world pricing estimation problem[cite: 9].
